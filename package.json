@@ -1,0 +1,11 @@
+{
+  "name": "kebiao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "opoet",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dayjs": "^1.10.7"
+  }
+}

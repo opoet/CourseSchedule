@@ -1,0 +1,26 @@
+[
+    {
+        "day": 5,
+        "name": "专业英语",
+        "position": "2-903",
+        "sectionContinue": 2,
+        "sectionStart": 1,
+        "teacher": "xx",
+        "week": [
+            10,
+            11
+        ]
+    },
+    {
+        "day": 5,
+        "name": "数字逻辑",
+        "position": "B-201",
+        "sectionContinue": 2,
+        "sectionStart": 3,
+        "teacher": "xxx",
+        "week": [
+            9,
+            11
+        ]
+    }
+]
