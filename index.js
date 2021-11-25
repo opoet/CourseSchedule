@@ -25,8 +25,8 @@ let getDayCourse = (classSchedule,nowWeek, toDay)=>{
         allCourseCount += item.sectionContinue
     })
 
-    let amCourse = tdcs.filter(item => item.sectionStart <= 4)
-    let pmCourse = tdcs.filter(item => item.sectionStart >= 5)
+    let amCourse = tdcs.filter(item => item.sectionStart <= 4).sort((a,b)=>a.sectionStart - b.sectionStart)
+    let pmCourse = tdcs.filter(item => item.sectionStart >= 5).sort((a,b)=>a.sectionStart - b.sectionStart)
 
     let courseInfo = (course)=>{
         let courseCount = 0
@@ -129,7 +129,8 @@ let makeMessage = (obj)=>{
     let nowWeek = getNowWeek(nowDate.add(1,'day'),backDate)
     let toDay = weekDays[nowDate.add(1,'day').day()]
     let message = makeMessage(getDayCourse(classSchedule,nowWeek,toDay))
-    tgBot(BOT_TOKEN,CHIT_ID,message)
-    qmsgBot(QMSG_TYPE,QMSG_KEY,QQ_NUM,message)
+    console.log(message)
+    // tgBot(BOT_TOKEN,CHIT_ID,message)
+    // qmsgBot(QMSG_TYPE,QMSG_KEY,QQ_NUM,message)
 })()
 

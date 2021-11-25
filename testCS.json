@@ -4,7 +4,7 @@
         "name": "专业英语",
         "position": "2-903",
         "sectionContinue": 2,
-        "sectionStart": 1,
+        "sectionStart": 3,
         "teacher": "xx",
         "week": [
             10,
@@ -16,7 +16,7 @@
         "name": "数字逻辑",
         "position": "B-201",
         "sectionContinue": 2,
-        "sectionStart": 3,
+        "sectionStart": 1,
         "teacher": "xxx",
         "week": [
             9,
