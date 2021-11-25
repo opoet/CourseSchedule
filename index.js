@@ -114,13 +114,15 @@ let makeMessage = (obj)=>{
     const classSchedule = require('./testCS.json')
     const {tgBot,qmsgBot} = require('./sendNotify')
 
-    const BACK_DAY = '2021-09-15' //返校日
-    const BOT_TOKEN = '' //机器人token
-    const CHIT_ID = '' //群组ID
+    const {process} = require('./env')
+
+    const BACK_DAY = process.env.back_day //返校日
+    const BOT_TOKEN = process.env.bot_token //机器人token
+    const CHIT_ID = process.env.chat_id //群组ID
 
     const QMSG_TYPE = 'send' //推送到个人或群组 send group
-    const QMSG_KEY = '' //qmsg 机器人key
-    const QQ_NUM = '' //QQ号或QQ群号
+    const QMSG_KEY = process.env.qmsg_key //qmsg 机器人key
+    const QQ_NUM = process.env.qq_num //QQ号或群号
 
     const nowDate = dayjs().utc(8)
     const backDate = dayjs(BACK_DAY).utc(8)
